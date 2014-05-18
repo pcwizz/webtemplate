@@ -99,7 +99,34 @@ img.large{
 img.extralarge{
 	width: 35em;
 }
+/*Buttons*/
+input[type=button]{
+	color: inherit;
+	background: inherit;
+	border: 1px solid #000;
+	outline: none;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+}
+input[type=button]:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+input[type=button].small{
+	padding: 0.5em;
+}
+input[type=button].medium{
+	padding: 1em;
+}
+input[type=button].large{
+	padding: 2em;
+}
+input[type=button].extralarge{
+	padding: 3em;
+}
 /*Footer stuff*/
 footer{
 	text-align: center;
+	padding: 2em;
 }
