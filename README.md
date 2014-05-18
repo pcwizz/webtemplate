@@ -9,7 +9,7 @@ A front end template, written by a back end guy to make his life easier, while a
 
 There are other probably much better alternatives such as using bootstrap, but there are also some reasons why this is a thing.
 
-1. Bootstrap has a loud of stuff I don't need
+1. Bootstrap has a load of stuff I don't need
 2. Bootstrap supports sass so must be for hipsters or something
 3. Bootstrap uses a lot of container divs from what I have seen; It makes it harder to use a page with unix tools
 4. I have a razor and I use it (same as 2)
