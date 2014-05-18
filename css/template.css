@@ -1,0 +1,105 @@
+/*Basic style sheet I can use in everything by Morgan Hill 2014*/
+/*Initial setup*/
+*{
+	box-sizing:border-box;
+}
+body, nav, nav ul, header, section, footer{
+	padding:0;
+	margin:0;
+	width: 100%;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	
+}
+a{
+	color: inherit;
+	text-decoration: underline;
+}
+/*Navigation*/
+nav ul{
+	color: #fff;
+	background: rgb(0,0,0);
+	display: block;
+	padding: 0.5em;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: 1em;
+}
+/*Header stuff*/
+header{
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+header h1{
+	font-size: 4em;
+}
+/*Section stuff*/
+section{
+	border-bottom: 1px solid #000;
+}
+section h1{
+	font-size: 1.5em;
+	margin-left: 1em;
+}
+/*article stuff*/
+article{
+	width: 50em;
+	padding: 0;
+	margin: 0 auto;
+	display: block;
+}
+article h1{
+	font-size: 1.2em;
+	margin: 0;
+}
+article div.columns{
+	column-width: 20em;
+	-moz-column-width: 20em;
+	-webkit-column-width: 20em;
+}
+article ul{
+	list-style-type: square;
+}
+article li{
+	display: list-item;
+}
+article li p{
+	display: inline;
+}
+article div.main{
+	width: 33em;
+	margin:0;
+	display: inline-block;
+}
+article aside{
+	display: inline-block;
+	vertical-align: top;
+	width:15em;
+	padding: 0;
+	margin-left: 1em;
+}
+aside article{
+	width: 15em;
+}
+/*images*/
+figure{
+	display: inline-block;
+}
+img.small{
+	width: 10em;
+	float: right;
+}
+img.medium{
+	width: 15em;
+}
+img.large{
+	width: 25em;
+}
+img.extralarge{
+	width: 35em;
+}
+/*Footer stuff*/
+footer{
+	text-align: center;
+}
