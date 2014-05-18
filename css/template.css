@@ -125,6 +125,16 @@ input[type=button].large{
 input[type=button].extralarge{
 	padding: 3em;
 }
+/*Text boxes*/
+label{
+	width: 10em;
+	display: inline-block;
+}
+input[type=textbox], input[type=password]{
+	width:14em;
+	border: 1px solid #000;
+	outline: none;
+}
 /*Footer stuff*/
 footer{
 	text-align: center;
