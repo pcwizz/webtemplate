@@ -9,6 +9,8 @@ body, nav, nav ul, header, section, footer{
 	width: 100%;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 1em;
+	line-height: 1.5em;
+	word-spacing: 0.03em;
 	
 }
 a{
@@ -99,11 +101,20 @@ img.large{
 img.extralarge{
 	width: 35em;
 }
+
+/*Text boxes*/
+label{
+	width: 10em;
+	display: inline-block;
+}
+input{
+	border: 1px solid #000;
+	outline: none;
+}
 /*Buttons*/
 input[type=button]{
 	color: inherit;
 	background: inherit;
-	border: 1px solid #000;
 	outline: none;
 	transition: all 1s ease;
 	-webkit-transition: all 1s ease;
@@ -111,10 +122,11 @@ input[type=button]{
 }
 input[type=button]:hover{
 	background: rgba(0,0,0,0.2);
-}
 
+}
 input[type=button].small{
 	padding: 0.5em;
+
 }
 input[type=button].medium{
 	padding: 1em;
@@ -125,15 +137,17 @@ input[type=button].large{
 input[type=button].extralarge{
 	padding: 3em;
 }
-/*Text boxes*/
-label{
-	width: 10em;
-	display: inline-block;
-}
-input[type=textbox], input[type=password]{
-	width:14em;
+/*selectors*/
+select{
+	background: inherit;
 	border: 1px solid #000;
+	margin-left: -5px;
 	outline: none;
+	
+}
+select, input[type=text], input[type=email],input[type=url], input[type=search], input[type=date], input[type=time]{
+	width: 12em;
+	height: 1.5em;
 }
 /*Footer stuff*/
 footer{
