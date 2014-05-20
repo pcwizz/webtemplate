@@ -151,7 +151,14 @@ select{
 	outline: none;
 	
 }
-select, input[type=text], input[type=email],input[type=url], input[type=search], input[type=date], input[type=time]{
+select,
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=date],
+input[type=time],
+input[type=password]{
 	width: 12em;
 	height: 1.5em;
 }
