@@ -36,6 +36,9 @@ header{
 header h1{
 	font-size: 4em;
 }
+header h2{
+	font-size: 1.75em;
+}
 /*Section stuff*/
 section{
 	border-bottom: 1px solid #000;
@@ -54,6 +57,9 @@ article{
 article h1{
 	font-size: 1.2em;
 	margin: 0;
+}
+article h2{
+	font-size: 1.1em;
 }
 article div.columns{
 	column-width: 20em;
