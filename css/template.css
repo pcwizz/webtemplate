@@ -179,3 +179,9 @@ footer{
 	text-align: center;
 	padding: 2em;
 }
+
+@media screen and (max-width: 1080px){
+ body{
+ 	background: red;
+ }
+}
