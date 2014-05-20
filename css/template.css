@@ -182,7 +182,7 @@ footer{
 
 @media screen and (max-width: 1080px){
 	header h1{
-		line-height: 4em;
+		line-height: 2em;
 	}
 	section nav ul{
 		width:100%;
@@ -190,6 +190,7 @@ footer{
 	}
 	article, .main, aside{
 		width:100%;
+		display: block;
 	}
 	.columns{
 		column-width: 0;
