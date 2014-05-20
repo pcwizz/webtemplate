@@ -147,7 +147,7 @@ input[type=button].extralarge{
 select{
 	background: inherit;
 	border: 1px solid #000;
-	margin-left: -5px;
+	margin-left: -0.355em;
 	outline: none;
 	
 }
