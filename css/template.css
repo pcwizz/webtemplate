@@ -181,7 +181,22 @@ footer{
 }
 
 @media screen and (max-width: 1080px){
- body{
- 	background: red;
- }
+	header h1{
+		line-height: 4em;
+	}
+	section nav ul{
+		width:100%;
+		float: none;
+	}
+	article, .main, aside{
+		width:100%;
+	}
+	.columns{
+		column-width: 0;
+		-moz-column-width: 0;
+		-webkit-column-width: 0;
+	}
+	aside{
+		display: block;
+	}
 }
