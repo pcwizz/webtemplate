@@ -152,7 +152,7 @@ select{
 	
 }
 select,
-input[type=text],
+input[type=plaintext],
 input[type=email],
 input[type=url],
 input[type=search],
