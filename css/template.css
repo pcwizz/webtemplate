@@ -179,8 +179,16 @@ footer{
 	text-align: center;
 	padding: 2em;
 }
+@media only screen and (max-width: 1507px){
+	.columns, article div.main{
+		width:25em;
+	}
+}
 
-@media screen and (max-width: 1080px){
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 1200px){
+/* Styles */
+
 	header h1{
 		line-height: 2em;
 	}
