@@ -180,7 +180,7 @@ footer{
 	padding: 2em;
 }
 @media only screen and (max-width: 1507px){
-	.columns, article div.main{
+	article div.main{
 		width:25em;
 	}
 }
@@ -233,6 +233,9 @@ footer{
 	}
 	img.extralarge{
 		width: 100%;
+	}
+	img.fullwith{
+		width:100%;
 	}
 
 }
