@@ -119,7 +119,9 @@ img.large{
 img.extralarge{
 	width: 35em;
 }
-
+img.fullwidth{
+	width: 100%;
+}
 /*Text boxes*/
 label{
 	width: 10em;
@@ -180,7 +182,7 @@ footer{
 	padding: 2em;
 }
 @media only screen and (max-width: 1507px){
-	article div.main{
+	article div.main, img.extralarge{
 		width:25em;
 	}
 }
@@ -233,9 +235,6 @@ footer{
 	}
 	img.extralarge{
 		width: 100%;
-	}
-	img.fullwith{
-		width:100%;
 	}
 
 }
