@@ -2,20 +2,25 @@
 /*Initial setup*/
 *{
 	box-sizing:border-box;
-}
-body, nav, nav ul, header, section, footer{
 	padding:0;
 	margin:0;
+}
+body, nav, nav ul, header, section, footer{
 	width: 100%;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 1em;
-	line-height: 1.5em;
 	word-spacing: 0.03em;
 	
+}
+header,p{
+	line-height: 1.5;
 }
 a{
 	color: inherit;
 	text-decoration: underline;
+}
+ul, ol{
+	padding: 2em;
 }
 /*Navigation*/
 nav ul{
@@ -45,12 +50,11 @@ section{
 }
 section h1{
 	font-size: 1.5em;
-	margin-left: 1em;
+	margin-left: 10px;
 }
 /*section nav*/
 section nav{
-		width: 20em;
-		float: left;
+	display: inline-block;
 }
 section nav ul{
 	background: rgba(0,0,0,0);
@@ -61,7 +65,7 @@ section nav ul li{
 }
 /*article stuff*/
 article{
-	width: 50em;
+	width: 1000px;
 	padding: 0;
 	margin: 0 auto;
 	display: block;
@@ -74,9 +78,9 @@ article h2{
 	font-size: 1.1em;
 }
 article div.columns{
-	column-width: 20em;
-	-moz-column-width: 20em;
-	-webkit-column-width: 20em;
+	column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
 }
 article ul{
 	list-style-type: square;
@@ -88,19 +92,20 @@ article li p{
 	display: inline;
 }
 article div.main{
-	width: 33em;
+	width: 750px;
 	margin:0;
+	padding: 0;
 	display: inline-block;
 }
 article aside{
 	display: inline-block;
 	vertical-align: top;
-	width:15em;
+	width: 240px;
 	padding: 0;
-	margin-left: 1em;
+
 }
 aside article{
-	width: 15em;
+	width: 240px;
 }
 /*images*/
 figure{
@@ -132,7 +137,7 @@ input{
 	outline: none;
 }
 /*Buttons*/
-input[type=button]{
+input[type=button], input[type=submit]{
 	color: inherit;
 	background: inherit;
 	outline: none;
@@ -140,21 +145,21 @@ input[type=button]{
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 }
-input[type=button]:hover{
+input[type=button]:hover, input[type=submit]:hover{
 	background: rgba(0,0,0,0.2);
 
 }
-input[type=button].small{
+input[type=button].small, input[type=submit].small{
 	padding: 0.5em;
 
 }
-input[type=button].medium{
+input[type=button].medium, input[type=submit].medium{
 	padding: 1em;
 }
-input[type=button].large{
+input[type=button].large, input[type=submit].large{
 	padding: 2em;
 }
-input[type=button].extralarge{
+input[type=button].extralarge, input[type=submit].extralarge{
 	padding: 3em;
 }
 /*selectors*/
@@ -170,6 +175,7 @@ input[type=textbox],
 input[type=email],
 input[type=url],
 input[type=search],
+input[type=tel],
 input[type=date],
 input[type=time],
 input[type=password]{
@@ -180,61 +186,55 @@ input[type=password]{
 footer{
 	text-align: center;
 	padding: 2em;
+	float: left;
 }
-@media only screen and (max-width: 1507px){
-	article div.main, img.extralarge{
-		width:25em;
+@media only screen and (max-width: 1020px){
+	section{
+		padding: 1.5em;
 	}
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width: 1200px){
-/* Styles */
-
-	header h1{
-		line-height: 2em;
+	section h1{
+		margin: 0;
 	}
 	section nav{
 		width:100%;
-		float: none;
+		
 	}
-	section h1{
-		margin:0;
-	}
-	article, article div.main, article aside, .colunms{
-		width:100%;
-		display: block;
-		padding: 0;
-		margin:0;
+	section nav ul li{
+		float: left;
 	}
 	article{
-		padding: 0.5em;
-	}
-	.columns{
-		column-width: 0;
-		-moz-column-width: 0;
-		-webkit-column-width: 0;
-	}
-	aside{
-		display: block;
-	}
-	aside article{
 		width:100%;
-		padding: 0;
 	}
-
-	/*Images*/
-	img.small{
-		width: 40%;
-	}
-	img.medium{
-		width: 50%;
-	}
-	img.large{
-		width: 70%;
-	}
-	img.extralarge{
+	article div.main{
 		width: 100%;
 	}
+	article div.columns{
+		column-count: 2;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+	}
+	article aside{
+		width: 100%;
+	}
+	aside article{
+		width: 100%;
+	}
+}
 
+@media only screen and (min-width: 1920px){
+	article{
+		width: 1500px;
+	}
+
+	article div.main{
+		width: 1250px;
+		column-count:3;
+		-moz-column-count:3;
+		-webkit-column-count:3;
+	}
+	article div.columns{
+		column-count:5;
+		-moz-column-count:5;
+		-webkit-column-count:5;	
+	}
 }
