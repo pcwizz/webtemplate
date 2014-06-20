@@ -188,6 +188,7 @@ footer{
 	padding: 2em;
 	float: left;
 }
+/* small screens*/
 @media only screen and (max-width: 1020px){
 	section{
 		padding: 1.5em;
@@ -223,7 +224,7 @@ footer{
 		width: 100%;
 	}
 }
-
+/*Big screen*/
 @media only screen and (min-width: 1920px){
 	article{
 		width: 1500px;
@@ -240,4 +241,19 @@ footer{
 		-moz-column-count:5;
 		-webkit-column-count:5;	
 	}
+}
+
+/*Printer*/
+
+@media only print{
+	nav, section nav{
+		display: none;
+	}
+	header, section, footer{
+		border: none;
+	}
+	section h1{
+		margin-left:0;
+	}
+
 }
