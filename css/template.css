@@ -231,7 +231,7 @@ footer{
 	}
 
 	header{
-		margin-top:2em;
+		margin-top:2.5em;
 	}
 
 	/*Icon for menu*/
@@ -248,7 +248,7 @@ footer{
 		position:fixed;
 		top:0;
 		left:0;
-		padding-left: 5px;
+		padding: 1em;
 
 	}
 
