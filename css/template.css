@@ -33,6 +33,12 @@ nav ul li{
 	display: inline-block;
 	margin-left: 1em;
 }
+
+/*hide mobile menue stuffs*/
+.mobile{
+	display: none;
+}
+
 /*Header stuff*/
 header{
 	text-align: center;
@@ -222,6 +228,58 @@ footer{
 	}
 	img.large,img.extralarge{
 		width: 100%;
+	}
+
+	header{
+		margin-top:2em;
+	}
+
+	/*Icon for menu*/
+	.mobile{
+		display: block;
+	}
+
+	#menuIcon{
+		color: #fff;
+		font-size: 1.5em;
+		background-color: #000;
+		text-decoration: none;
+		width:100%;
+		position:fixed;
+		top:0;
+		left:0;
+		padding-left: 5px;
+
+	}
+
+	#menu{
+		display: none;
+	}
+	#menuDisplay{
+		display: none;
+	}
+	#menuDisplay:checked ~ #menu{
+		display: block;
+		width:100%;
+		position: fixed;
+		top:1.5em;
+		left:0;
+		padding: 0;
+		margin-top:5px;
+		height: 100%;
+	}
+
+	#menuDisplay:checked ~ #menu li{
+		float: left;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+		margin: 0;
+		border-bottom: 1px solid #fff;
+	}
+
+	#menuDisplay:checked ~ #menuIcon{
+		border-bottom: 1px solid #fff;
 	}
 }
 /*Big screen*/
