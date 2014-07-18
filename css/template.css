@@ -191,11 +191,10 @@ input[type=password]{
 
 /*Tables*/
 table{
-	border: 1px solid black;
 	border-collapse: collapse;
 }
 
-table tbody:nth-child(2n+0){
+table tr:nth-child(2n){
 	background: rgba(50,50,50, 0.25);
 }
 
@@ -203,16 +202,33 @@ table tr{
 	border-top: 1px solid black;
 }
 
+table tr:first-child{
+	border:none;
+}
+
 table th{
 	font-weight: bold;
 	text-decoration: none;
 	padding: 0.5em;
+	background: rgba(50,50,50, 0.50);
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
 }
 
 table tr td{
-	border:none;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
 	padding: 0.5em;
 	text-align:left;
+}
+
+table tr td:first-child,
+table tr td:last-child{
+	border:none;
+}
+table tr th:first-child,
+table tr th:last-child{
+	border:none;
 }
 /*Footer stuff*/
 footer{
