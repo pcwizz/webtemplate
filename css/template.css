@@ -195,7 +195,7 @@ table{
 	border-collapse: collapse;
 }
 
-table:nth-child(2n+0){
+table tbody:nth-child(2n+0){
 	background: rgba(50,50,50, 0.25);
 }
 
