@@ -188,6 +188,31 @@ input[type=password]{
 	width: 12em;
 	height: 1.5em;
 }
+
+/*Tables*/
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table:nth-child(2n+1){
+	background: rgba(50,50,50, 0.25);
+}
+
+table tr{
+	border-top: 1px solid black;
+}
+
+table th{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+table tr td{
+	border:none;
+	padding: 0.5em;
+	text-align:left;
+}
 /*Footer stuff*/
 footer{
 	text-align: center;
