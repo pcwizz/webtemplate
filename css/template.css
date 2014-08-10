@@ -33,7 +33,26 @@ nav ul li{
 	display: inline-block;
 	margin-left: 1em;
 }
+nav #menu a{
+	text-decoration: none;
+}
+nav #menu li ul,
+nav #menu li ul li ul{
+	display: none;
+}
+nav #menu li:hover ul{
+	display: block;
+	z-index: 999;
+	position: absolute;
+	width: 10em;
+	padding:0;
+}
+nav #menu li ul li{
+	margin:0;
+	width: 10em;
+	padding-top: 0.3em;
 
+}
 /*hide mobile menue stuffs*/
 .mobile{
 	display: none;
@@ -230,6 +249,18 @@ table tr th:first-child,
 table tr th:last-child{
 	border:none;
 }
+
+/*Fancy first letter styling*/
+article p:first-of-type:first-letter{
+	font-size: 1.5em;
+	background: rgba(100,100,100,0.75);
+	padding: 0.25em;
+	box-shadow: inset 0px 0px 0.3em 0.1em #000;
+	border-radius: 0.2em;
+	float: left;
+	margin-right: 0.25em;
+}
+
 /*Footer stuff*/
 footer{
 	text-align: center;
@@ -323,7 +354,23 @@ footer{
 	#menuDisplay:checked ~ #menuIcon{
 		border-bottom: 1px solid #fff;
 	}
+	nav #menu li ul,
+	nav #menu li:hover ul,
+	nav #menu li ul li ul{
+		display: block;
+		z-index: 0;
+		position: relative;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	#menu li ul li{
+		width: 100%;
+		border-bottom: 1px solid #fff;
+	}
+
 }
+
 /*Big screen*/
 @media only screen and (min-width: 1920px){
 	article{
