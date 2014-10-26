@@ -152,6 +152,12 @@ img.extralarge{
 img.fullwidth{
 	width: 100%;
 }
+
+/*forms*/
+legend{
+	font-weight: bold;
+}
+
 /*Text boxes*/
 label{
 	width: 10em;
