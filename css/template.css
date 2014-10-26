@@ -196,7 +196,7 @@ select{
 	
 }
 select,
-input[type=textbox],
+input[type=text],
 input[type=email],
 input[type=url],
 input[type=search],
