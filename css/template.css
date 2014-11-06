@@ -275,6 +275,9 @@ footer{
 }
 /* small screens*/
 @media only screen and (max-width: 1020px){
+	body{
+	/*	overflow: hidden;*/
+	}
 	section{
 		padding: 1.5em;
 	}
@@ -310,71 +313,90 @@ footer{
 	}
 
 	header{
-		margin-top:3em;
+		margin-top:2em;
 	}
 
 	/*Mobile friendly menu*/
 	.mobile{
 		display: block;
+		background-color: #000;
 	}
 
-	#menuIcon{
-		color: #fff;
-		font-size: 1.5em;
-		background-color: #000;
-		text-decoration: none;
+	#topBar{
 		width:100%;
 		position:fixed;
 		top:0;
 		left:0;
-		padding: 0.8em;
-
+		padding-left: 0.1em;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
 	}
-
+	.menuIconBar {
+		box-sizing: border-box;
+		display: block;
+		width: 1.3em;
+		height: 0.2em;
+		margin: 0.2em;
+		background-color: #fff;
+		border-radius: 0.1em;
+	}
+	#menuIcon{
+		position:relative;
+		display:block;
+		transition: margin-left 0.5s ease;
+	}
+	#menuTitle{
+		position:fixed;
+		top: 0.5em;
+		left: -5em;
+		color: #fff;
+		transition: left 0.5s ease;
+		font-weight: bold;
+	}
+	#menuDisplay:checked ~ #menu ~ #topBar #menuTitle{
+		left: 0.5em;
+	}
+	#menuIcon .menuIconBar:nth-of-type(1){
+		margin-top: 0;
+	}
+	#menuDisplay:checked ~ #menu ~ #topBar #menuIcon{
+		margin-left: calc(100% - 2.2em);
+	}
 	#menu{
-		display: none;
-	}
-	#menuDisplay{
-		display: none;
-	}
-	#menuDisplay:checked ~ #menu{
-		display: block;
-		width:100%;
-		position: fixed;
-		top:4em;
-		left:0;
-		padding: 0;
-		margin-top:5px;
+		position:fixed;
+		top: 2em;
+		left: -11em;
+		width: 11em;
 		height: 100%;
+		background-color: grey;
+		color: black;
+		padding: 0.5em;
+		transition: left 0.5s ease;
+		-webkit-transition: left 0.5s ease;
+		-moz-transition: left 0.5s ease;
+		-o-transition: left 0.5s ease;
 	}
 
-	#menuDisplay:checked ~ #menu li{
-		float: left;
-		width: 100%;
-		text-align: center;
-		padding: 10px;
-		margin: 0;
-		border-bottom: 1px solid #fff;
+	#menuDisplay:checked ~ #menu{
+		left:0;
 	}
-
-	#menuDisplay:checked ~ #menuIcon{
-		border-bottom: 1px solid #fff;
-	}
-	nav #menu li ul,
-	nav #menu li:hover ul,
-	nav #menu li ul li ul{
-		display: block;
-		z-index: 0;
-		position: relative;
-		width: 100%;
+	
+	#menu ul,
+	#menu ul:hover{
+		display: block !important;
+		position: relative !important;
 		padding: 0;
-		margin: 0;
+		margin-top: 0.3em;
+		margin-left: 0;
+		color: inherit;
 	}
-	#menu li ul li{
-		width: 100%;
-		border-bottom: 1px solid #fff;
-	}
-
+	#menu li{
+		display: block !important;
+		width: 10em;
+		margin-left: 0;
+		margin-top: 0.3em;
+		float: left;
+	}	
 }
 
 /*Big screen*/

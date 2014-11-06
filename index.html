@@ -9,20 +9,29 @@
 		<nav>
 			<input type="checkbox" id="menuDisplay" class="mobile" role="button">
 			<ul id="menu">
-				<li><a href="index.html">Home</a><ul>
-					<li>
-					<a href="#idea">The idea</a>
+				<li>
+					<a href="index.html">Home</a>
 					<ul>
-						<li><a href="#brief">Brief</a></li>
-						<li><a href="#why">Why?</a></li>
-						<li><a href="#where">Where can I see it?</a></li>
+						<li>
+							<a href="#idea">The idea</a>
+							<ul>
+								<li><a href="#brief">Brief</a></li>
+								<li><a href="#why">Why?</a></li>
+								<li><a href="#where">Where can I see it?</a></li>
+							</ul>
+						</li>
 					</ul>
-					</li>
-				</ul>
 				</li>
-				<a href="more.html"><li>More</li></a>
+				<li><a href="more.html">More</a></li>
 			</ul>
-			<label id="menuIcon" for="menuDisplay" class="mobile">Menu</label>
+			<div class="mobile" id="topBar">
+				<span id="menuTitle">Menu</span>
+				<label id="menuIcon" for="menuDisplay" class="mobile">
+					<span class="menuIconBar"></span>
+					<span class="menuIconBar"></span>
+					<span class="menuIconBar"></span>
+				</label>
+			</div>
 		</nav>
 		<header>
 			<h1>Web Template</h1>
